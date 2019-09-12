@@ -2,7 +2,7 @@ public class Hand
 {
 	private Card[] cards;
 	private Deck deck;
-	private int suits[]; // holds the number od each suit in hand
+	private int suits[]; // holds the number of each suit in hand
 	private int values[]; // hholds the number of each type card (a,2,3,4,...K)
 
 	public Hand()

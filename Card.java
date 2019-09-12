@@ -39,26 +39,26 @@ public class Card
 	{
 		String name = "";
 		if (value == 1)
-			name = "Ace of ";
+			name = "ace_of_";
 		else if (value == 11)
-			name = "Jack of ";
+			name = "jack_of_";
 		else if (value == 12)
-			name = "Queen of ";
+			name = "queen_of_";
 		else if (value == 13)
-			name = "King of ";
+			name = "king_of_";
 		else // use the numerical value
-			name = value + " of ";
+			name = value + "_of_";
 
 		// Add on the suit
 
 		if (suit == 1)
-			name += "Hearts";
+			name += "hearts";
 		else if (suit == 2)
-			name += "Diamonds";
+			name += "diamonds";
 		else if (suit == 3)
-			name += "Clubs";
+			name += "clubs";
 		else 
-			name += "Spades";
+			name += "spades";
 		return name;
 	}
 }

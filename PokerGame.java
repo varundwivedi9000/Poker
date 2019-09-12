@@ -25,14 +25,14 @@ public class PokerGame
 	public void viewInitialHand()
 	{
 		hand.newHand();
-		player.displayHand(hand.getHand());
+		player.displayHand(hand);
 	}
 
 	public void discardOrHoldCards()
 	{
 		player.getDiscard(holdCards);
 		hand.updateHand(holdCards);
-		player.displayHand(hand.getHand());
+		player.displayHand(hand);
 		int payoff = hand.evaluateHand();
 		int winnings = updateBankroll(payoff);
 		player.displayResults(payoff, winnings); // the hand & the number of coins won(lost)
